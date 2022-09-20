@@ -108,8 +108,7 @@
       // TODO: register event onclick / addEventListener untuk button
       // akan menjalankan fungsi fnClickHandler
       button.addEventListener("click", () => {
-         let val = input.value
-         fnClickHandler(val)
+         fnClickHandler(input.value)
          input.value = ""
       })
       
@@ -117,8 +116,7 @@
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
       input.addEventListener("keypress", (event) => {
          if (event.code === 13 || event.charCode === 13) {
-            let val = input.value
-            fnClickHandler(val)
+            fnClickHandler(input.value)
             input.value = ""
          }
       })
